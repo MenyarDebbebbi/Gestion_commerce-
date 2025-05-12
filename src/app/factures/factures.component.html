@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="card mt-4">
+    <div class="card-body">
+      <h2 class="card-title text-primary-green">
+        <i class="fas fa-file-invoice me-2"></i>Gestion des Factures
+      </h2>
+      <button class="btn btn-primary mb-3">
+        <i class="fas fa-plus me-2"></i>Nouvelle Facture
+      </button>
+
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>N° Facture</th>
+              <th>Date</th>
+              <th>Client</th>
+              <th>Produits</th>
+              <th>Total</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let facture of factures">
+              <td>{{ facture.numero }}</td>
+              <td>{{ facture.date }}</td>
+              <td>{{ facture.client.nom }}</td>
+              <td>
+                <ul class="list-unstyled mb-0">
+                  <li *ngFor="let prod of facture.produits">
+                    {{ prod.quantite }}x {{ prod.nom }} ({{
+                      prod.prix | currency : "EUR"
+                    }})
+                  </li>
+                </ul>
+              </td>
+              <td>{{ facture.total | currency : "EUR" }}</td>
+              <td>
+                <button class="btn btn-sm btn-info me-2">
+                  <i class="fas fa-edit"></i>
+                </button>
+                <button class="btn btn-sm btn-success me-2">
+                  <i class="fas fa-print"></i>
+                </button>
+                <button class="btn btn-sm btn-danger">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

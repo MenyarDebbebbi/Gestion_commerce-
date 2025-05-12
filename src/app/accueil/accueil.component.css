@@ -1,0 +1,43 @@
+.dashboard {
+  padding: 20px;
+}
+
+.stat-card {
+  transition: transform 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.text-primary-green {
+  color: var(--primary-green);
+}
+
+.text-gray-dark {
+  color: var(--gray-dark);
+}
+
+.text-gray-light {
+  color: var(--gray-light);
+}
+
+.card-title {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.list-group-item {
+  border: none;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.btn {
+  text-align: left;
+  padding: 0.75rem 1rem;
+}

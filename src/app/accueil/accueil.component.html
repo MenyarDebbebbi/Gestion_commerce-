@@ -1,0 +1,78 @@
+<div class="dashboard">
+  <div class="row g-4">
+    <!-- Statistiques -->
+    <div class="col-md-3">
+      <div class="card stat-card">
+        <div class="card-body">
+          <h5 class="card-title text-gray-dark">Clients</h5>
+          <h2 class="card-text text-primary-green">150</h2>
+          <p class="text-gray-light">Total clients</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card stat-card">
+        <div class="card-body">
+          <h5 class="card-title text-gray-dark">Produits</h5>
+          <h2 class="card-text text-primary-green">75</h2>
+          <p class="text-gray-light">En stock</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card stat-card">
+        <div class="card-body">
+          <h5 class="card-title text-gray-dark">Factures</h5>
+          <h2 class="card-text text-primary-green">320</h2>
+          <p class="text-gray-light">Ce mois</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card stat-card">
+        <div class="card-body">
+          <h5 class="card-title text-gray-dark">Règlements</h5>
+          <h2 class="card-text text-primary-green">285</h2>
+          <p class="text-gray-light">En attente</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Actions rapides -->
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Actions rapides</h5>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary" routerLink="/clients">
+              Nouveau Client
+            </button>
+            <button class="btn btn-primary" routerLink="/factures">
+              Nouvelle Facture
+            </button>
+            <button class="btn btn-primary" routerLink="/produits">
+              Nouveau Produit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activités récentes -->
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Activités récentes</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Nouvelle facture créée - Client A</li>
+            <li class="list-group-item">Règlement reçu - Client B</li>
+            <li class="list-group-item">Stock mis à jour - Produit X</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="card mt-4">
+    <div class="card-body">
+      <h2 class="card-title text-primary-green">
+        <i class="fas fa-money-bill-wave me-2"></i>Gestion des Règlements
+      </h2>
+      <button class="btn btn-primary mb-3">
+        <i class="fas fa-plus me-2"></i>Nouveau Règlement
+      </button>
+
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Référence</th>
+              <th>Date</th>
+              <th>N° Facture</th>
+              <th>Client</th>
+              <th>Montant</th>
+              <th>Mode</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let reglement of reglements">
+              <td>{{ reglement.reference }}</td>
+              <td>{{ reglement.date }}</td>
+              <td>{{ reglement.facture.numero }}</td>
+              <td>{{ reglement.facture.client }}</td>
+              <td>{{ reglement.montant | currency : "EUR" }}</td>
+              <td>{{ reglement.mode }}</td>
+              <td>
+                <button class="btn btn-sm btn-info me-2">
+                  <i class="fas fa-edit"></i>
+                </button>
+                <button class="btn btn-sm btn-danger">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

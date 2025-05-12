@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary-green: #2e7d32;
+  --secondary-green: #4caf50;
+  --dark: #212121;
+  --gray-dark: #424242;
+  --gray-light: #757575;
+  --light: #f5f5f5;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: var(--primary-green) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-green);
+  border-color: var(--secondary-green);
+}
+
+.table {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: none;
+}
